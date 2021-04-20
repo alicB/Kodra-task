@@ -1,0 +1,196 @@
+.sidenav {
+    width: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background: #4570c6;
+    overflow-x: hidden;
+    padding: 8px 0;
+    text-align: right;
+    width: 370px;
+    color: white;
+}
+ul.breadcrumb {
+  padding: 0px 58px;
+  list-style: none;
+  background-color: #4570c6;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: white;
+  content: "\2192";
+ 
+}
+ul, ol {
+   
+    line-height: 26px;
+}
+
+
+
+
+ul.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: none;
+  text-align: center;
+}
+.sidebar-menu .logo-block {
+    padding: 40px 40px 35px 40px;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    color: white;
+}
+
+.sidebar-menu>div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: inherit;
+}
+
+.sidenav a {
+    padding: 16px 28px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    display: block;
+}
+
+.sidenav p {
+    padding: 16px 28px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ffe000;
+}
+
+.main {
+    margin-left: 140px;
+    /* Same width as the sidebar + left position in px */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* Para Linea Amarilla */
+
+.seccion_activa {
+    color: #ffe000 !important;
+}
+
+.sidenav a:hover::before {
+    width: 65%;
+    background-color: #ffe000;
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 2px;
+    top: inherit;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    z-index: -1;
+    margin-right: 35%;
+    margin-top: 3%;
+}
+
+.seccion_activa::before {
+    width: 65%;
+    background-color: #ffe000;
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 2px;
+    top: inherit;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    z-index: -1;
+    margin-right: 35%;
+    margin-top: 3%;
+}
+
+
+/*Estilos de Blog*/
+
+.h3blog {
+    font-size: 13pt;
+    line-height: 20px;
+}
+
+.ablog {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.btnblog {
+    border: 1px solid blue;
+    color: blue;
+    text-transform: none;
+}
+
+.btnblog:hover {
+    color: white;
+    background-color: blue;
+}
+
+.pblog {
+    font-size: 12pt;
+    color: #454444;
+}
+
+.divblog {
+    font-size: 11pt;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.divblog a {
+    text-decoration: none;
+    color: gray;
+}
+
+.divblog a:hover {
+    color: blue;
+}
